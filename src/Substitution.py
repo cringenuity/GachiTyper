@@ -7,3 +7,6 @@ class Substitution:
     @property
     def wrappedReplacement(self):
         return f'{self.wrapperChar}{self.replacement}{self.wrapperChar}'
+
+    def __str__(self):
+        return f'{self.source} -> {self.wrappedReplacement}'
