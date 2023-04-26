@@ -6,7 +6,7 @@ from SubstitutionList import SubstitutionList
 class AhkScriptGenerator:
     _header = textwrap.dedent("""
         #SingleInstance Force
-        #Hotstring * ?
+        #Hotstring * ? r z
 
     """)
 

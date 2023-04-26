@@ -20,4 +20,6 @@ class SubstitutionListParser:
             for source in sources.split(','):
                 result.add(Substitution(source, sub))
 
+        result.sort()
+
         return result

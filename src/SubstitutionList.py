@@ -6,3 +6,6 @@ class SubstitutionList:
 
     def add(self, substitution: Substitution):
         self.substitutions.append(substitution)
+
+    def sort(self):
+        self.substitutions.sort(key=lambda x: len(x.source), reverse=True)
