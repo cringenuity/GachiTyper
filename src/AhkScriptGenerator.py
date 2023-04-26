@@ -8,6 +8,22 @@ class AhkScriptGenerator:
         #SingleInstance Force
         #Hotstring * ? r z
 
+        #SuspendExempt True
+        ::!!gachi off::
+        ::!!гачи офф::
+        {
+            Send "{Raw}Yes, Sir!"
+            Suspend True
+        }
+
+        ::!!gachi on::
+        ::!!гачи он::
+        {
+            Send "{Raw}Yes, Sir!"
+            Suspend False
+        }
+        #SuspendExempt False
+
     """)
 
     def generate(self, substitutions: SubstitutionList, outputFile: str):
