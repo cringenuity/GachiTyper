@@ -1,4 +1,5 @@
 import textwrap
+import os
 
 from Substitution import Substitution
 from SubstitutionList import SubstitutionList
@@ -27,6 +28,8 @@ class AhkScriptGenerator:
     """)
 
     def generate(self, substitutions: SubstitutionList, outputFile: str):
+        os.makedirs(os.path.dirname(outputFile), exist_ok=True)
+
         with open(outputFile, 'w', encoding='utf-8') as file:
             file.write(self._header)
 

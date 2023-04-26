@@ -1,8 +1,9 @@
 class Substitution:
-    def __init__(self, source: str, replacement: str):
+    def __init__(self, source: str, replacement: str, wrapperChar: str | None = None):
         self.source = source
         self.replacement = replacement
+        self.wrapperChar = wrapperChar
 
     @property
     def wrappedReplacement(self):
-        return f'♂{self.replacement}♂'
+        return f'{self.wrapperChar}{self.replacement}{self.wrapperChar}'
