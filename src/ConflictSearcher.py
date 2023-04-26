@@ -12,7 +12,10 @@ class ConflictSearcher:
 
         for i in range(len(sorted_subs)):
             for j in range(i + 1, len(sorted_subs)):
-                if sorted_subs[i].source in sorted_subs[j].source:
+                source1 = sorted_subs[i].source
+                source2 = sorted_subs[j].source
+
+                if source1 in source2 and not source2.endswith(source1):
                     conflicts.append((sorted_subs[i], sorted_subs[j]))
 
         return conflicts
