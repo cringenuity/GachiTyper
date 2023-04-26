@@ -13,13 +13,24 @@ class ArgumentsParser:
         )
 
         self._parser.add_argument(
-            '-w', '-wrapper-char',
+            '-w', '--wrapper-char',
             help='Character to wrap substitution in'
         )
 
         self._parser.add_argument(
             '-o', '--output',
             help='Output file name'
+        )
+
+        self._parser.add_argument(
+            '-c', '--compile',
+            help='Compile generated scripts to .exe ?',
+            action='store_true'
+        )
+
+        self._parser.add_argument(
+            '--compiler-path',
+            help='Path to compiler (Ahk2Exe.exe)'
         )
 
     def parse(self):
@@ -30,11 +41,13 @@ class ArgumentsParser:
         attributesMap = {
             'wrapper_char': 'wrapperChar',
             'subs_list': 'substitutionsFile',
-            'output': 'outputFile'
+            'output': 'outputFile',
+            'compile': 'compile',
+            'compiler_path': 'compilerPath'
         }
 
         for argName, attrName in attributesMap.items():
-            if hasattr(args, argName):
-                setattr(config, attrName, getattr(args, argName))
+            if value := getattr(args, argName) is not None:
+                setattr(config, attrName, value)
 
         return config
