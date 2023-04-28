@@ -12,7 +12,7 @@
 сакшен,сакшон,suction=suction
 лоадс,loads=hot loads
 фак,фок,fuck=fuck
-артист,ортист,artist=performance artist
+артист,artist=performance artist
 хорни,хони,horny=horny
 лезермен,leatherman,leathermen=leatherman
 билли,били,billy=Billy
@@ -26,7 +26,6 @@
 нау,now=now boy
 кмон,cmon=c'mon
 кам,ком,cum=cum
-ооо,ooo=OOOO, I see
 кен,кан,can=ass we can
 ви,wee=WEE
 умник,smartass=smartass
