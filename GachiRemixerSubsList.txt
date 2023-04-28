@@ -21,10 +21,10 @@
 босс,boss=boss of this gym
 олрайт,алрайт,alright=alright
 еа,yeah=yeeaaahh
-мм,ммм=mhmm
+мм,mm=mhmm
 гет,get=get your ass back here
 нау,now=now boy
-кмон,комон,коммон,common=c'mon
+кмон,cmon=c'mon
 кам,ком,cum=cum
 ооо,ooo=OOOO, I see
 кен,кан,can=ass we can

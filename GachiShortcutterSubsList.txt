@@ -12,10 +12,10 @@
 олрайт,алрайт,alright=alright
 еа,yeah=yeeaaahh
 сенк,thank=thank you, sir!
-мм,ммм=mhmm
+мм,mm=mhmm
 гет,get=get your ass back here
 нау,now=now boy
-кмон,комон,коммон,common=c'mon
+кмон,комон,cmon=c'mon
 тейк,take=take it boy
 фистинг,fisting=fisting
 сваллоу,swallow=swallow my cum
