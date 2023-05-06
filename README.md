@@ -1,12 +1,12 @@
 # GachiTyper
 
-GachiTyper is an AutoHotkey script generator written in Python. It generates scripts with hotstrings from substitution lists (like [GachiTyperCombinedSubsList.txt](GachiTyperCombinedSubsList.txt)).
+GachiTyper is an AutoHotkey script generator written in Python. It generates scripts with hotstrings from substitution lists (like [GachiTyper♂Cum♂binedSubsList.txt](GachiTyper♂Cum♂binedSubsList.txt)).
 
 Currently there are 3 substitution lists:
 
 - [GachiRemixerSubsList.txt](GachiRemixerSubsList.txt) - tries to natively gachi-remix anything you type.
 - [GachiShortcutterSubsList.txt](GachiShortcutterSubsList.txt) - contains shortcuts for gachi phrases like ♂Do you like what you see?♂ and ♂get your ass back here♂.
-- [GachiTyperCombinedSubsList.txt](GachiTyperCombinedSubsList.txt) - tries to combine gachi-remixing with shortcuts.
+- [GachiTyper♂Cum♂binedSubsList.txt](GachiTyper♂Cum♂binedSubsList.txt) - tries to combine gachi-remixing with shortcuts.
 
 Generated scripts can be disabled via `!!gachi off` or `!!гачи офф` and enabled via `!!gachi on` or `!!гачи он`.
 
