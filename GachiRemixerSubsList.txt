@@ -25,7 +25,7 @@
 гет,get=get your ass back here
 нау,now=now boy
 кмон,cmon=c'mon
-кам,ком,cum=cum
+кам,ком,cum,com,cam=cum
 кен,кан,can=ass we can
 ви,wee=WEE
 умник,smartass=smartass
