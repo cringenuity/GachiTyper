@@ -13,14 +13,14 @@ class AhkScriptGenerator:
         ::!!gachi off::
         ::!!гачи офф::
         {
-            Send "{Raw}Yes, Sir!"
+            Send "{Raw}♂Yes, Sir!♂"
             Suspend True
         }
 
         ::!!gachi on::
         ::!!гачи он::
         {
-            Send "{Raw}Yes, Sir!"
+            Send "{Raw}♂that turns me on♂"
             Suspend False
         }
         #SuspendExempt False
