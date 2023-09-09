@@ -14,17 +14,7 @@ def main():
         if outputFile is None:
             outputFile = 'GachiTyper.ahk'
 
-        Program().run(args.substitutionsFile, outputFile)
-    else:
-        generateAllScripts(args)
-
-def generateAllScripts(args: Arguments):
-    for subsListName in iglob('*SubsList.txt'):
-        outputFileName = subsListName.replace('SubsList.txt', '.ahk')
-
-        outputFileName = os.path.join('out', outputFileName)
-
-        Program(args).run(subsListName, outputFileName)
+        Program(args).run(args.substitutionsFile, outputFile)
 
 if __name__ == '__main__':
     main()

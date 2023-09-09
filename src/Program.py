@@ -1,14 +1,12 @@
 from SubstitutionListParser import SubstitutionListParser
 from AhkScriptGenerator import AhkScriptGenerator
 from Arguments import Arguments
-from CompilerCaller import CompilerCaller
 from ConflictSearcher import ConflictSearcher
 
 class Program:
     def __init__(self, args: Arguments):
         self._parser = SubstitutionListParser()
-        self._scriptGenerator = AhkScriptGenerator()
-        self._compilerCaller = CompilerCaller(args)
+        self._scriptGenerator = AhkScriptGenerator(args)
         self._conflictSearcher = ConflictSearcher()
         self._arguments = args
 
@@ -26,6 +24,3 @@ class Program:
                 print(f'    "{sub1}" and "{sub2}"')
 
         self._scriptGenerator.generate(substitutions, outputFile)
-
-        if self._arguments.compile:
-            self._compilerCaller.compile(outputFile)
